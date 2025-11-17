@@ -200,6 +200,7 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 img {
@@ -225,10 +226,55 @@ img {
     margin-bottom: 20px;
 }
 
-#biography-section p:first-of-type {
+#biography-section p {
     margin-bottom: 20px;
 }
 
+#biography-section :not(:first-of-type) {
+    text-indent: 2ch;
+}
+
 /* PROJECTS STYLES */
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-section {
+    background-color: var(--light-purple);
+}
+
+.project>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.link-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-holder>a {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 
 /* FOOTER STYLES */
