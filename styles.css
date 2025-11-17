@@ -138,7 +138,7 @@ table {
 /* VARIABLES */
 
 :root {
-    --light-blue: #CFE4F2;
+    --light-blue: #DEEDF7;
     --light-purple: #E3E0FF;
     --dark-blue: #1E209A;
     --page-font: "Inter", sans-serif;
@@ -181,12 +181,53 @@ nav ul {
 
 nav a {
     font-size: 1.2rem;
+    text-decoration: underline;
 }
+
 
 
 /* MAIN STYLES */
 
+
+main>section {
+    padding: 25px 25px 50px;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+}
+
+
 /* BIOGRAPHY STYLES */
+
+#biography-section {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#biography-section img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10%;
+    border: solid 5px var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+#biography-section p:first-of-type {
+    margin-bottom: 20px;
+}
 
 /* PROJECTS STYLES */
 
