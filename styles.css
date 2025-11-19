@@ -261,7 +261,7 @@ h3 {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    width: 80%;
 }
 
 .link-holder {
@@ -277,7 +277,7 @@ h3 {
 }
 
 .project img {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -305,4 +305,19 @@ footer {
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width:500px) {
+    main>section {
+        padding: 25px 50px 50px;
+    }
+
+    #biography-section img {
+        width: 80%;
+    }
+
+    .project>div {
+        width: 100%;
+    }
 }
