@@ -176,7 +176,7 @@ h1 a {
 nav ul {
     display: flex;
     flex-direction: column;
-    gap: 4 px;
+    gap: 4px;
 }
 
 nav a {
@@ -239,6 +239,11 @@ img {
     text-indent: 2ch;
 }
 
+#biography-section p:first-of-type {
+    text-align: center;
+    font-style: italic;
+}
+
 /* PROJECTS STYLES */
 
 h3 {
@@ -255,6 +260,9 @@ h3 {
 
 #projects-section {
     background-color: var(--light-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project>div {
@@ -280,6 +288,7 @@ h3 {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
+    max-height: 800px;
 }
 
 .project>p {
@@ -319,5 +328,17 @@ footer {
 
     .project>div {
         width: 100%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .link-holder {
+        justify-content: center;
+        gap: 40px;
     }
 }
