@@ -309,7 +309,7 @@ footer {
     color: white;
 }
 
-#contact-links {
+footer ul {
     margin-top: 20px;
     display: flex;
     gap: 20px;
@@ -341,4 +341,18 @@ footer {
         justify-content: center;
         gap: 40px;
     }
+
+    footer ul {
+        font-size: 1.5rem;
+        gap: 40px;
+    }
+}
+
+/* HOVER STYLES */
+nav a:hover {
+    color: darkgrey;
+}
+
+.link-holder a:hover {
+    background-color: var(--light-blue);
 }
