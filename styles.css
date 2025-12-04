@@ -345,6 +345,38 @@ footer ul {
 
 }
 
+@media screen and (min-width:700px) {
+    #bio-content img {
+        float: left;
+        max-width: 250px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        height: 100%;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        align-items: start;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .project h3 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    .project>div {
+        grid-row: 2;
+    }
+
+    .project p {
+        margin: 0;
+    }
+}
+
 /* HOVER STYLES */
 nav a:hover {
     color: darkgrey;
